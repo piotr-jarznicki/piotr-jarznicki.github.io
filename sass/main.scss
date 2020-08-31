@@ -4,8 +4,10 @@
 
 body {
   background: $primary-clr;
+  font-family: "Raleway", sans-serif;
   text-align: center;
   font-size: 18px;
+  // letter-spacing: 1.1px;
 }
 
 .logo-menu {
@@ -13,57 +15,85 @@ body {
   justify-content: space-between;
   align-items: center;
   margin: 1em 2em 2em 2em;
+
+  &__text {
+    font-weight: 500;
+    color: $acc-clr;
+    font-size: 0.9rem;
+  }
 }
 
 .hero {
-  &__illustration {
-    margin: 1em auto;
+  &__heading {
+    font-size: 3rem;
+    font-weight: normal;
   }
+
+  &__title {
+    font-size: 2rem;
+  }
+
+  &__minor-heading {
+    font-size: 1.5rem;
+    padding: 0 1.5em;
+    color: $acc-clr;
+  }
+
+  &__illustration {
+    width: 90%;
+    margin: 0.7em auto;
+  }
+
+  &__subtitle {
+    font-size: 0.9rem;
+  }
+
   &__button {
     width: 10em;
     height: 3.5em;
+    margin-top: 2em;
+    font-weight: 600;
+    background: $acc-clr;
   }
 }
 
-// .nav {
-//   width: 60%;
-//   &__list {
-//     display: flex;
-//     align-items: center;
-//     position: absolute;
-//     bottom: 0;
-//     height: 3rem;
-//     background: $acc-clr;
-//     margin: 0;
-//     padding: 0;
-//   }
-//   &__item {
-//     margin-right: 1em;
-//   }
-//   &__link {
-//   }
-//   &__image {
-//     width: 1.3em;
-//   }
-// }
+.social-media {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3em;
+  background: $acc-clr;
+}
 
-// .social-media {
-//   width: 100vw;
-//   height: 3rem;
-//   display: flex;
-//   &__item {
-//     width: 2em;
-//   }
-// }
-// .page-navigation {
-//   width: 40%;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   height: 3rem;
-//   background: $acc-clr;
-//   &__arrow {
-//     margin-right: 2em;
-//     color: black;
-//   }
-// }
+.nav {
+  &__list {
+    display: flex;
+    align-items: center;
+    margin-left: 1.1em;
+  }
+
+  &__item {
+    margin-left: 1.1em;
+  }
+
+  &__image {
+    width: 1.4em;
+    fill: black;
+  }
+}
+
+.page-navigation {
+  display: flex;
+  margin-right: 2em;
+  height: 100%;
+  margin-top: 0.2em;
+  &__arrow {
+    margin-left: 1em;
+    font-size: 2em;
+    font-weight: 600;
+  }
+}
