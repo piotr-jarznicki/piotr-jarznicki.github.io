@@ -1,8 +1,9 @@
 @import "variables";
 @import "reset";
 @import "typography";
+@import "about-me";
 
-body {
+* body {
   background: $primary-clr;
   font-family: "Raleway", sans-serif;
   text-align: center;
@@ -95,5 +96,26 @@ body {
     margin-left: 1em;
     font-size: 2em;
     font-weight: 600;
+  }
+}
+
+.hero {
+  position: absolute;
+}
+
+// ANIMATION
+
+.slide-in {
+  animation: slide-in 0.8s ease forwards;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+    visibility: visible;
+  }
+
+  to {
+    transform: translateX(0%);
   }
 }

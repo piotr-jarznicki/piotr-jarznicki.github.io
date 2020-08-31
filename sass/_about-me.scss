@@ -1,0 +1,21 @@
+.about-me {
+  position: absolute;
+  &__title {
+    color: $acc-clr;
+    font-weight: normal;
+  }
+
+  &__subtitle {
+    font-weight: 300;
+    padding: 0 1.1em;
+  }
+
+  &__illustration {
+    position: absolute;
+    top: 55%;
+    left: 55%;
+    transform: translateX(-50%);
+    width: 70%;
+    margin: 0 auto;
+  }
+}

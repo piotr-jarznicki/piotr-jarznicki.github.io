@@ -4,17 +4,87 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <div id="barba-wrapper">
-      <div class="barba-container">
-        <div class="page2">
-          <h1>This is about me page!</h1>
-          <a href="index.html">Go to about me page</a>
+    <header class="header">
+      <section class="logo-menu">
+        <p class="logo-menu__text">Piotr Jarznicki</p>
+        <div class="container">
+          <img
+            src="assets/hamburger-icon.png"
+            alt="Three bars used as a menu icon"
+            class="logo-menu__hamburger-icon"
+          />
+        </div>
+      </section>
+
+      <div id="barba-wrapper">
+        <div class="barba-container">
+          <section class="about-me">
+            <h1 class="about-me__title">That's me</h1>
+            <p class="about-me__subtitle">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+              eleifend dolor id tellus pulvinar fermentum. Integer cursus
+              facilisis nulla id blandit.
+              <img
+                src="assets/me-mobile.png"
+                alt=""
+                class="about-me__illustration"
+              />
+            </p>
+          </section>
         </div>
       </div>
-    </div>
+
+      <section class="social-media header__social-media">
+        <nav class="nav social-media__nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="" class="nav__link"
+                ><img
+                  src="assets/facebook.svg"
+                  class="nav__image"
+                  alt="facebook black icon"
+              /></a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link"
+                ><img
+                  src="assets/github-logo.svg"
+                  class="nav__image"
+                  alt="github black icon"
+              /></a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link"
+                ><img
+                  src="assets/instagram.svg"
+                  class="nav__image"
+                  alt="instagram black icon"
+              /></a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link"
+                ><img
+                  src="assets/linkedin.svg"
+                  class="nav__image"
+                  alt="linkedin black icon"
+              /></a>
+            </li>
+          </ul>
+        </nav>
+        <section class="page-navigation header__page-navigation">
+          <div class="page-navigation__arrow">&#60;</div>
+          <div class="page-navigation__arrow">&#62;</div>
+        </section>
+      </section>
+    </header>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js"></script>
     <script src="app.js"></script>
   </body>

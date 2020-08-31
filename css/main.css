@@ -6,6 +6,7 @@
 body {
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 img {
@@ -47,7 +48,36 @@ p {
   color: #e8e8e8;
 }
 
-body {
+p {
+  line-height: 1.7em;
+  font-weight: 200;
+}
+
+.about-me {
+  position: absolute;
+}
+
+.about-me__title {
+  color: #ecdab9;
+  font-weight: normal;
+}
+
+.about-me__subtitle {
+  font-weight: 300;
+  padding: 0 1.1em;
+}
+
+.about-me__illustration {
+  position: absolute;
+  top: 55%;
+  left: 55%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 70%;
+  margin: 0 auto;
+}
+
+* body {
   background: #0c0a0a;
   font-family: "Raleway", sans-serif;
   text-align: center;
@@ -155,5 +185,38 @@ body {
   margin-left: 1em;
   font-size: 2em;
   font-weight: 600;
+}
+
+.hero {
+  position: absolute;
+}
+
+.slide-in {
+  -webkit-animation: slide-in 0.8s ease forwards;
+          animation: slide-in 0.8s ease forwards;
+}
+
+@-webkit-keyframes slide-in {
+  from {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes slide-in {
+  from {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
 }
 /*# sourceMappingURL=main.css.map */
