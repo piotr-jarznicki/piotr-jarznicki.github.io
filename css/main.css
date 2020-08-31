@@ -1,0 +1,64 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  color: #e8e8e8;
+}
+
+body {
+  background: #0c0a0a;
+  text-align: center;
+  font-size: 18px;
+}
+
+.logo-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1em 2em 2em 2em;
+}
+
+.hero__illustration {
+  margin: 1em auto;
+}
+
+.hero__button {
+  width: 10em;
+  height: 3.5em;
+}
+/*# sourceMappingURL=main.css.map */

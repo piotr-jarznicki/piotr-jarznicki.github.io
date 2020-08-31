@@ -1,0 +1,69 @@
+@import "variables";
+@import "reset";
+@import "typography";
+
+body {
+  background: $primary-clr;
+  text-align: center;
+  font-size: 18px;
+}
+
+.logo-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1em 2em 2em 2em;
+}
+
+.hero {
+  &__illustration {
+    margin: 1em auto;
+  }
+  &__button {
+    width: 10em;
+    height: 3.5em;
+  }
+}
+
+// .nav {
+//   width: 60%;
+//   &__list {
+//     display: flex;
+//     align-items: center;
+//     position: absolute;
+//     bottom: 0;
+//     height: 3rem;
+//     background: $acc-clr;
+//     margin: 0;
+//     padding: 0;
+//   }
+//   &__item {
+//     margin-right: 1em;
+//   }
+//   &__link {
+//   }
+//   &__image {
+//     width: 1.3em;
+//   }
+// }
+
+// .social-media {
+//   width: 100vw;
+//   height: 3rem;
+//   display: flex;
+//   &__item {
+//     width: 2em;
+//   }
+// }
+// .page-navigation {
+//   width: 40%;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   height: 3rem;
+//   background: $acc-clr;
+//   &__arrow {
+//     margin-right: 2em;
+//     color: black;
+//   }
+// }
