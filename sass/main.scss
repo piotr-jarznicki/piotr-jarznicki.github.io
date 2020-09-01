@@ -6,6 +6,23 @@
 @import "projects";
 @import "contact";
 
+// ANIMATION
+
+.slide-in {
+  animation: slide-in 0.8s ease forwards;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+    visibility: visible;
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+
 body {
   background: $primary-clr;
   font-family: "Raleway", sans-serif;
@@ -18,7 +35,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 1em 2em 2em 2em;
+  margin: 1em 2em 0em 2em;
 
   &__text {
     font-weight: 500;
@@ -28,6 +45,8 @@ body {
 }
 
 .hero {
+  position: absolute;
+  margin-top: 0.7em;
   &__heading {
     font-size: 3rem;
     font-weight: normal;
@@ -44,7 +63,7 @@ body {
   }
 
   &__illustration {
-    width: 90%;
+    width: 75%;
     margin: 0.7em auto;
   }
 
@@ -58,6 +77,61 @@ body {
     margin-top: 2em;
     font-weight: 600;
     background: $acc-clr;
+  }
+}
+
+.main-nav {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 0%;
+  // display: none;
+  height: 2.5em;
+  background: #211f1f;
+  &__list {
+    color: white;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    width: 90%;
+  }
+
+  &__item {
+    width: 10%;
+  }
+
+  &__image {
+    width: 100%;
+  }
+}
+
+.slide-in-nav {
+  animation: slide-in-nav 0.7s ease forwards;
+}
+
+.slide-out-nav {
+  animation: slide-out-nav 0.7s ease backwards;
+}
+
+@keyframes slide-in-nav {
+  from {
+    left: 100%;
+  }
+
+  to {
+    left: 0%;
+  }
+}
+
+@keyframes slide-out-nav {
+  from {
+    left: 0%;
+  }
+
+  to {
+    left: 100%;
   }
 }
 
@@ -99,26 +173,5 @@ body {
     margin-left: 1em;
     font-size: 2em;
     font-weight: 600;
-  }
-}
-
-.hero {
-  position: absolute;
-}
-
-// ANIMATION
-
-.slide-in {
-  animation: slide-in 0.8s ease forwards;
-}
-
-@keyframes slide-in {
-  from {
-    transform: translateX(100%);
-    visibility: visible;
-  }
-
-  to {
-    transform: translateX(0%);
   }
 }

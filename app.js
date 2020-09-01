@@ -1,3 +1,13 @@
+const menuButton = document.querySelector(".logo-menu__hamburger-icon");
+const menu = document.querySelector(".main-nav");
+menuButton.addEventListener("click", function () {
+  if (menu.classList.contains("slide-in-nav")) {
+    menu.classList.remove("slide-in-nav");
+    menu.classList.add("slide-out-nav");
+  }
+
+  menu.classList.add("slide-in-nav");
+});
 Barba.Pjax.start();
 
 var FadeTransition = Barba.BaseTransition.extend({
