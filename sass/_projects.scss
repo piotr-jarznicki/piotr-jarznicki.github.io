@@ -3,9 +3,10 @@
   height: 100vh;
 
   &__container {
-    border-top: 1px solid yellow;
-    border-left: 1px solid yellow;
-    margin-left: 2em;
+    margin: 0 1em;
+    padding: 10px 10px;
+    border-left: 1px solid #292828;
+    border-top: 1px solid #292828;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -13,17 +14,29 @@
   }
 
   &__image {
-    padding-left: 20px;
     width: 100%;
     height: 50%;
+    border-bottom: 1px solid #292828;
+    // border-left: 0.5px solid #ecdab9;
+    padding-bottom: 10px;
+    // padding-left: 10px;
   }
 
   &__description {
-    padding-left: 500px;
-    margin-left: 10em;
-
+    margin: 0.5em 0;
+    // border-left: 0.5px solid #ecdab9;
     width: 100%;
-    height: 28vh;
+    height: 26vh;
     background: #242222;
+  }
+
+  .page-navigation-projects {
+    margin: 0 10em;
+  }
+
+  .page-navigation__arrow {
+    color: $acc-clr;
+    margin: 0;
+    padding: 0;
   }
 }
