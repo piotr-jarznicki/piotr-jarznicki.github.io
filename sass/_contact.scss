@@ -1,0 +1,45 @@
+.contact {
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+    margin: 0 auto;
+  }
+}
+
+.form {
+  &__label {
+    color: white;
+    margin: 0.5em 0;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  &__input {
+    width: 100%;
+    height: 3em;
+    background: #211f1f;
+    border: none;
+  }
+
+  &__submit {
+    width: 100%;
+    color: black;
+    font-weight: 600;
+    border: none;
+    padding: 1.2em 0;
+    background: $acc-clr;
+    text-transform: uppercase;
+  }
+
+  &__textarea {
+    width: 100%;
+    margin-bottom: 1em;
+    background: #211f1f;
+    border: none;
+  }
+
+  span {
+    color: $acc-clr;
+  }
+}

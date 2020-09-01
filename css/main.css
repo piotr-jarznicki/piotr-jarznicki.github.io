@@ -77,7 +77,103 @@ p {
   margin: 0 auto;
 }
 
-* body {
+.skills__title {
+  color: #ecdab9;
+}
+
+.skills__illustration {
+  margin-top: 1em;
+}
+
+.projects {
+  width: 100vw;
+  height: 100vh;
+}
+
+.projects__container {
+  border-top: 1px solid yellow;
+  border-left: 1px solid yellow;
+  margin-left: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.projects__image {
+  padding-left: 20px;
+  width: 100%;
+  height: 50%;
+}
+
+.projects__description {
+  padding-left: 500px;
+  margin-left: 10em;
+  width: 100%;
+  height: 28vh;
+  background: #242222;
+}
+
+.contact__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.form__label {
+  color: white;
+  margin: 0.5em 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.form__input {
+  width: 100%;
+  height: 3em;
+  background: #211f1f;
+  border: none;
+}
+
+.form__submit {
+  width: 100%;
+  color: black;
+  font-weight: 600;
+  border: none;
+  padding: 1.2em 0;
+  background: #ecdab9;
+  text-transform: uppercase;
+}
+
+.form__textarea {
+  width: 100%;
+  margin-bottom: 1em;
+  background: #211f1f;
+  border: none;
+}
+
+.form span {
+  color: #ecdab9;
+}
+
+body {
   background: #0c0a0a;
   font-family: "Raleway", sans-serif;
   text-align: center;

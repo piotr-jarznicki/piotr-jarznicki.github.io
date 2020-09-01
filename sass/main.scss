@@ -2,8 +2,11 @@
 @import "reset";
 @import "typography";
 @import "about-me";
+@import "skills";
+@import "projects";
+@import "contact";
 
-* body {
+body {
   background: $primary-clr;
   font-family: "Raleway", sans-serif;
   text-align: center;
