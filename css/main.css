@@ -55,7 +55,7 @@ p {
 
 p {
   line-height: 1.7em;
-  font-weight: 200;
+  font-weight: 400;
 }
 
 .about-me {
@@ -228,6 +228,7 @@ body {
   font-family: "Raleway", sans-serif;
   text-align: center;
   font-size: 18px;
+  height: 100vh;
 }
 
 .logo-menu {
@@ -250,11 +251,16 @@ body {
 }
 
 .hero {
+  height: 100vh;
+  background-image: url("/assets/robot-mobile.png");
+  background-position: center 60%;
+  background-size: 80%;
+  background-repeat: no-repeat;
   margin-top: 0.7em;
 }
 
 .hero__heading {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: normal;
 }
 
@@ -269,12 +275,12 @@ body {
 }
 
 .hero__illustration {
-  width: 75%;
-  margin: 0.7em auto;
+  height: 30vh;
+  margin: 0.6em auto;
 }
 
 .hero__subtitle {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .hero__button {
@@ -286,7 +292,6 @@ body {
 }
 
 .main-nav {
-  width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -297,20 +302,21 @@ body {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  left: 100%;
+  width: 100vw;
   height: 2.5em;
+  left: 100%;
   background: #211f1f;
 }
 
 .main-nav__list {
-  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 auto;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 90%;
+  margin: 0 auto;
+  color: white;
 }
 
 .main-nav__item {
@@ -421,6 +427,7 @@ body {
 
 .overlay {
   position: absolute;
+  width: 60vw;
   width: 100%;
   height: 100%;
   background: #0c0a0a;
@@ -467,5 +474,45 @@ html.is-animating .transition-left {
 html.is-animating .transition-wipe {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
+}
+
+@media (min-width: 400px) {
+  .hero__illustration {
+    margin: 2em auto;
+  }
+}
+
+@media (min-width: 700px) {
+  :root {
+    font-size: 24px;
+  }
+  :root .hero__button {
+    width: 12em;
+    height: 3em;
+    font-size: 1.2rem;
+    margin: 0;
+  }
+}
+
+@media (min-width: 900px) {
+  :root {
+    font-size: 30px;
+  }
+  :root .hero__button {
+    width: 12em;
+    height: 3em;
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  .logo-menu__hamburger-icon {
+    width: 2.5em;
+  }
+}
+
+@media (min-height: 600px) {
+  .hero {
+    background-position: center 60%;
+    background-size: 100%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

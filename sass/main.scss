@@ -5,7 +5,7 @@
 @import "skills";
 @import "projects";
 @import "contact";
-
+@import "media-queries";
 // ANIMATION
 
 .slide-in {
@@ -28,6 +28,7 @@ body {
   font-family: "Raleway", sans-serif;
   text-align: center;
   font-size: 18px;
+  height: 100vh;
 }
 
 .logo-menu {
@@ -44,10 +45,14 @@ body {
 }
 
 .hero {
-  // position: absolute;
+  height: 100vh;
+  background-image: url("/assets/robot-mobile.png");
+  background-position: center 60%;
+  background-size: 80%;
+  background-repeat: no-repeat;
   margin-top: 0.7em;
   &__heading {
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: normal;
   }
 
@@ -62,12 +67,12 @@ body {
   }
 
   &__illustration {
-    width: 75%;
-    margin: 0.7em auto;
+    height: 30vh;
+    margin: 0.6em auto;
   }
 
   &__subtitle {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   &__button {
@@ -80,21 +85,20 @@ body {
 }
 
 .main-nav {
-  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  left: 100%;
-  // display: none;
+  width: 100vw;
   height: 2.5em;
+  left: 100%;
   background: #211f1f;
   &__list {
-    color: white;
     display: flex;
-    margin: 0 auto;
     justify-content: space-around;
     width: 90%;
+    margin: 0 auto;
+    color: white;
   }
 
   &__item {
@@ -177,6 +181,7 @@ body {
 
 .overlay {
   position: absolute;
+  width: 60vw;
   width: 100%;
   height: 100%;
   background: #0c0a0a;
@@ -213,4 +218,54 @@ html.is-animating .transition-left {
 
 html.is-animating .transition-wipe {
   transform: scaleX(1);
+}
+
+// ** MEDIA QUERIES **
+
+@media (min-width: 400px) {
+  .hero__illustration {
+    margin: 2em auto;
+    // width: 60vw;
+  }
+}
+
+@media (min-width: 700px) {
+  :root {
+    font-size: 24px;
+
+    .hero {
+      &__button {
+        width: 12em;
+        height: 3em;
+        font-size: 1.2rem;
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  :root {
+    font-size: 30px;
+
+    .hero {
+      &__button {
+        width: 12em;
+        height: 3em;
+        font-size: 1.2rem;
+        margin: 0;
+      }
+    }
+  }
+
+  .logo-menu__hamburger-icon {
+    width: 2.5em;
+  }
+}
+
+@media (min-height: 600px) {
+  .hero {
+    background-position: center 60%;
+    background-size: 100%;
+  }
 }
