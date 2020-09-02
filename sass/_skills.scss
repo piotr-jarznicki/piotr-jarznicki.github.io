@@ -1,7 +1,10 @@
-.skills__title {
-  color: $acc-clr;
-}
+.skills {
+  position: absolute;
+  &__title {
+    color: $acc-clr;
+  }
 
-.skills__illustration {
-  margin-top: 1em;
+  &__illustration {
+    margin-top: 1em;
+  }
 }

@@ -27,53 +27,49 @@
         <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link" href="index.html"
+              <a class="main-nav__link" href="/index.html"
                 ><img class="main-nav__image" src="/assets/home.svg" alt=""
               /></a>
             </li>
             <li class="main-nav__item">
-              <a href="about-me.html" class="main-nav__link"
+              <a href="/about-me.html" class="main-nav__link"
                 ><img class="main-nav__image" src="/assets/man.svg" alt=""
               /></a>
             </li>
             <li class="main-nav__item">
-              <a href="skills.html" class="main-nav__link"
+              <a href="/skills.html" class="main-nav__link"
                 ><img class="main-nav__image" src="/assets/pencil.svg" alt=""
               /></a>
             </li>
             <li class="main-nav__item">
-              <a href="projects.html" class="main-nav__link"
+              <a href="/projects.html" class="main-nav__link"
                 ><img class="main-nav__image" src="/assets/projects.svg" alt=""
               /></a>
             </li>
             <li class="main-nav__item">
-              <a href="contact-me.html" class="main-nav__link"
+              <a href="/contact-me.html" class="main-nav__link"
                 ><img class="main-nav__image" src="/assets/mail.svg" alt=""
               /></a>
             </li>
           </ul>
         </nav>
       </section>
-      <div id="barba-wrapper">
-        <div class="barba-container">
-          <section class="hero header__hero">
-            <h2 class="hero__heading">Hi!</h2>
-            <h1 class="hero__title">I am Piotr!</h1>
-            <h3 class="hero__minor-heading">Front-End Developer</h3>
-            <p class="hero__subtitle">
-              Passionate about web and how things work.
-            </p>
-            <a href="about-me.html">
-              <button class="hero__button">See my projects</button></a
-            >
-            <img
-              src="assets/robot-mobile.png"
-              alt="Illustration of a robot which is currently being repaired"
-              class="hero__illustration"
-            />
-          </section>
-        </div>
-      </div>
+
+      <section class="hero header__hero transition-fade" id="swup">
+        <h2 class="hero__heading">Hi!</h2>
+        <h1 class="hero__title">I am Piotr!</h1>
+        <h3 class="hero__minor-heading">Front-End Developer</h3>
+        <p class="hero__subtitle">Passionate about web and how things work.</p>
+        <a href="/about-me.html">
+          <button class="hero__button">See my projects</button></a
+        >
+        <img
+          src="assets/robot-mobile.png"
+          alt="Illustration of a robot which is currently being repaired"
+          class="hero__illustration"
+        />
+      </section>
+      <div class="transition-wipe overlay"></div>
       <section class="social-media header__social-media">
         <nav class="nav social-media__nav">
           <ul class="nav__list">
@@ -117,7 +113,10 @@
         </section>
       </section>
     </header>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js"></script>
+    <script src="/node_modules/swup/dist/swup.min.js"></script>
     <script src="app.js"></script>
+    <script>
+      const swup = new Swup();
+    </script>
   </body>
 </html>
