@@ -5,7 +5,6 @@
 @import "skills";
 @import "projects";
 @import "contact";
-@import "media-queries";
 // ANIMATION
 
 .slide-in {
@@ -46,10 +45,10 @@ body {
 
 .hero {
   height: 100vh;
-  background-image: url("/assets/robot-mobile.png");
-  background-position: center 60%;
-  background-size: 80%;
-  background-repeat: no-repeat;
+  // background-image: url("/assets/Robot.png");
+  // background-position: center 60%;
+  // background-size: 70%;
+  // background-repeat: no-repeat;
   margin-top: 0.7em;
   &__heading {
     font-size: 3.5rem;
@@ -68,7 +67,7 @@ body {
 
   &__illustration {
     height: 30vh;
-    margin: 0.6em auto;
+    margin: 2em auto;
   }
 
   &__subtitle {
@@ -222,50 +221,49 @@ html.is-animating .transition-wipe {
 
 // ** MEDIA QUERIES **
 
-@media (min-width: 400px) {
-  .hero__illustration {
-    margin: 2em auto;
-    // width: 60vw;
-  }
-}
+// @media (min-width: 320px) {
+//   .hero {
+//     background-size: 80%;
+//   }
+// }
 
-@media (min-width: 700px) {
-  :root {
-    font-size: 24px;
+// @media (min-width: 700px) {
+//   :root {
+//     font-size: 24px;
 
-    .hero {
-      &__button {
-        width: 12em;
-        height: 3em;
-        font-size: 1.2rem;
-        margin: 0;
-      }
-    }
-  }
-}
+//     .hero {
+//       &__button {
+//         width: 12em;
+//         height: 3em;
+//         font-size: 1.2rem;
+//         margin: 0;
+//       }
+//     }
+//   }
+// }
 
-@media (min-width: 900px) {
-  :root {
-    font-size: 30px;
+// @media (min-width: 900px) {
+//   :root {
+//     font-size: 30px;
 
-    .hero {
-      &__button {
-        width: 12em;
-        height: 3em;
-        font-size: 1.2rem;
-        margin: 0;
-      }
-    }
-  }
+//     .hero {
+//       &__button {
+//         width: 12em;
+//         height: 3em;
+//         font-size: 1.2rem;
+//         margin: 0;
+//       }
+//     }
+//   }
 
-  .logo-menu__hamburger-icon {
-    width: 2.5em;
-  }
-}
+//   .logo-menu__hamburger-icon {
+//     width: 2.5em;
+//   }
+// }
 
-@media (min-height: 600px) {
-  .hero {
-    background-position: center 60%;
-    background-size: 100%;
-  }
-}
+// @media (min-height: 600px) {
+//   .hero {
+//     background-position: center 60%;
+//     background-size: 100%;
+//   }
+// }
