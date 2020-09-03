@@ -1,7 +1,12 @@
 .skills {
-  position: absolute;
+  position: relative;
   &__title {
     color: $acc-clr;
+  }
+
+  &__subtitle {
+    font-size: 0.9rem;
+    padding: 0 0.8em;
   }
 
   &__illustration {

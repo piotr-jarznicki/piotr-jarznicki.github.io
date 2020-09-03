@@ -79,11 +79,16 @@ p {
 }
 
 .skills {
-  position: absolute;
+  position: relative;
 }
 
 .skills__title {
   color: #ecdab9;
+}
+
+.skills__subtitle {
+  font-size: 0.9rem;
+  padding: 0 0.8em;
 }
 
 .skills__illustration {
@@ -121,7 +126,7 @@ p {
   margin: 0.5em 0;
   width: 100%;
   height: 26vh;
-  background: #242222;
+  background: #211f1f;
 }
 
 .projects .page-navigation-projects {
@@ -149,16 +154,25 @@ p {
   margin: 0 auto;
 }
 
+.contact__title {
+  font-size: 1.3rem;
+}
+
+.contact__subtitle {
+  font-size: 0.9rem;
+  padding: 0 1em;
+}
+
 .form__label {
   color: white;
   margin: 0.5em 0;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: 500;
 }
 
 .form__input {
   width: 100%;
-  height: 3em;
+  height: 2em;
   background: #211f1f;
   border: none;
 }
@@ -261,6 +275,7 @@ body {
 }
 
 .hero__illustration {
+  display: none;
   height: 30vh;
   margin: 2em auto;
 }
@@ -460,5 +475,267 @@ html.is-animating .transition-left {
 html.is-animating .transition-wipe {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
+}
+
+@media (min-width: 1024px) {
+  .logo-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 1em 2em 0em 2em;
+  }
+  .logo-menu__text {
+    font-weight: 500;
+    color: #ecdab9;
+    font-size: 0.9rem;
+  }
+  .hero {
+    border: 1px solid red;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 40vh;
+    margin: 5em;
+  }
+  .hero__text {
+    margin-left: 5em;
+    text-align: left;
+  }
+  .hero__heading {
+    font-size: 3.5rem;
+    font-weight: normal;
+  }
+  .hero__title {
+    font-size: 2rem;
+  }
+  .hero__minor-heading {
+    font-size: 1.5rem;
+    padding: 0 1.5em;
+    color: #ecdab9;
+  }
+  .hero__illustration {
+    display: none;
+    height: 70vh;
+    margin: 2em auto;
+  }
+  .hero__subtitle {
+    font-size: 1rem;
+  }
+  .hero__button {
+    width: 10em;
+    height: 3.5em;
+    margin-top: 2em;
+    font-weight: 600;
+    background: #ecdab9;
+  }
+  .main-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    width: 100vw;
+    height: 2.5em;
+    left: 100%;
+    background: #211f1f;
+  }
+  .main-nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 90%;
+    margin: 0 auto;
+    color: white;
+  }
+  .main-nav__item {
+    width: 10%;
+  }
+  .main-nav__image {
+    width: 100%;
+  }
+  .social-media {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30%;
+    height: 3em;
+    background: #ecdab9;
+  }
+  .nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 1.1em;
+  }
+  .nav__item {
+    margin-left: 1.1em;
+  }
+  .nav__image {
+    width: 1.4em;
+    fill: black;
+  }
+  .page-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 2em;
+    height: 100%;
+    margin-top: 0.2em;
+  }
+  .page-navigation__arrow {
+    margin-left: 1em;
+    font-size: 2em;
+    font-weight: 600;
+  }
+}
+
+.solar-system {
+  width: 320px;
+  height: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0.5em auto;
+}
+
+.orbit {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #fafbfc;
+  border-radius: 50%;
+}
+
+.earth-orbit {
+  width: 300px;
+  height: 300px;
+  -webkit-animation: spin 12s linear 0s infinite;
+}
+
+.venus-orbit {
+  width: 200px;
+  height: 200px;
+  -webkit-animation: spin 12s linear 0s infinite;
+}
+
+.mercury-orbit {
+  width: 100px;
+  height: 100px;
+  -webkit-animation: spin 12s linear 0s infinite;
+}
+
+.planet {
+  position: absolute;
+  top: -20px;
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  background-color: #ecdab9;
+}
+
+.sun {
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  background-color: #211f1f;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 0em;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.planet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+@media (min-height: 600px) {
+  .contact {
+    margin-top: 2em;
+  }
+}
+
+@media (min-height: 700px) {
+  .hero__illustration {
+    display: block;
+  }
 }
 /*# sourceMappingURL=main.css.map */

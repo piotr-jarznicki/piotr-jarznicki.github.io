@@ -45,10 +45,6 @@ body {
 
 .hero {
   height: 100vh;
-  // background-image: url("/assets/Robot.png");
-  // background-position: center 60%;
-  // background-size: 70%;
-  // background-repeat: no-repeat;
   margin-top: 0.7em;
   &__heading {
     font-size: 3.5rem;
@@ -66,6 +62,7 @@ body {
   }
 
   &__illustration {
+    display: none;
     height: 30vh;
     margin: 2em auto;
   }
@@ -221,49 +218,224 @@ html.is-animating .transition-wipe {
 
 // ** MEDIA QUERIES **
 
-// @media (min-width: 320px) {
-//   .hero {
-//     background-size: 80%;
-//   }
-// }
+@media (min-width: 1024px) {
+  .logo-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em 2em 0em 2em;
 
-// @media (min-width: 700px) {
-//   :root {
-//     font-size: 24px;
+    &__text {
+      font-weight: 500;
+      color: $acc-clr;
+      font-size: 0.9rem;
+    }
+  }
 
-//     .hero {
-//       &__button {
-//         width: 12em;
-//         height: 3em;
-//         font-size: 1.2rem;
-//         margin: 0;
-//       }
-//     }
-//   }
-// }
+  .hero {
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;
+    height: 40vh;
+    margin: 5em;
 
-// @media (min-width: 900px) {
-//   :root {
-//     font-size: 30px;
+    &__text {
+      margin-left: 5em;
+      text-align: left;
+    }
 
-//     .hero {
-//       &__button {
-//         width: 12em;
-//         height: 3em;
-//         font-size: 1.2rem;
-//         margin: 0;
-//       }
-//     }
-//   }
+    &__heading {
+      font-size: 3.5rem;
+      font-weight: normal;
+    }
 
-//   .logo-menu__hamburger-icon {
-//     width: 2.5em;
-//   }
-// }
+    &__title {
+      font-size: 2rem;
+    }
 
-// @media (min-height: 600px) {
-//   .hero {
-//     background-position: center 60%;
-//     background-size: 100%;
-//   }
-// }
+    &__minor-heading {
+      font-size: 1.5rem;
+      padding: 0 1.5em;
+      color: $acc-clr;
+    }
+
+    &__illustration {
+      display: none;
+      height: 70vh;
+      margin: 2em auto;
+    }
+
+    &__subtitle {
+      font-size: 1rem;
+    }
+
+    &__button {
+      width: 10em;
+      height: 3.5em;
+      margin-top: 2em;
+      font-weight: 600;
+      background: $acc-clr;
+    }
+  }
+
+  .main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100vw;
+    height: 2.5em;
+    left: 100%;
+    background: #211f1f;
+    &__list {
+      display: flex;
+      justify-content: space-around;
+      width: 90%;
+      margin: 0 auto;
+      color: white;
+    }
+
+    &__item {
+      width: 10%;
+    }
+
+    &__image {
+      width: 100%;
+    }
+  }
+
+  .social-media {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30%;
+    height: 3em;
+    background: $acc-clr;
+  }
+
+  .nav {
+    &__list {
+      display: flex;
+      align-items: center;
+      margin-left: 1.1em;
+    }
+
+    &__item {
+      margin-left: 1.1em;
+    }
+
+    &__image {
+      width: 1.4em;
+      fill: black;
+    }
+  }
+
+  .page-navigation {
+    display: flex;
+    margin-right: 2em;
+    height: 100%;
+    margin-top: 0.2em;
+    &__arrow {
+      margin-left: 1em;
+      font-size: 2em;
+      font-weight: 600;
+    }
+  }
+}
+
+.solar-system {
+  width: 320px;
+  height: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5em auto;
+  // position: absolute;
+}
+
+.orbit {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fafbfc;
+  border-radius: 50%;
+}
+
+.earth-orbit {
+  width: 300px;
+  height: 300px;
+  -webkit-animation: spin 12s linear 0s infinite;
+}
+
+.venus-orbit {
+  width: 200px;
+  height: 200px;
+  -webkit-animation: spin 12s linear 0s infinite;
+}
+
+.mercury-orbit {
+  width: 100px;
+  height: 100px;
+  -webkit-animation: spin 12s linear 0s infinite;
+}
+
+.planet {
+  position: absolute;
+  top: -20px;
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  background-color: #ecdab9;
+}
+
+.sun {
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  background-color: #211f1f;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 0em;
+  // margin: 0 auto;
+  // align-items: center;
+  // position: absolute;
+  // margin: 2em 0.4em;
+  font-weight: 600;
+  font-size: 0.9rem;
+  // width: 100vw;
+}
+
+.planet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@media (min-height: 600px) {
+  .contact {
+    margin-top: 2em;
+  }
+}
+
+@media (min-height: 700px) {
+  .hero__illustration {
+    display: block;
+  }
+}
