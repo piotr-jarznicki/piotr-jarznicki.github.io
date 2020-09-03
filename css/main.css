@@ -66,11 +66,12 @@ p {
 .about-me__subtitle {
   font-weight: 300;
   padding: 0 1.1em;
+  font-size: 1rem;
 }
 
 .about-me__illustration {
   position: absolute;
-  top: 55%;
+  top: 38%;
   left: 55%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -96,7 +97,7 @@ p {
 }
 
 .projects__container {
-  margin: 0 1em;
+  width: 80%;
   padding: 10px 10px;
   border-left: 1px solid #292828;
   border-top: 1px solid #292828;
@@ -107,17 +108,13 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  margin: 0 auto;
 }
 
 .projects__image {
+  position: relative;
   width: 100%;
-  height: 50%;
+  height: 100%;
   border-bottom: 1px solid #292828;
   padding-bottom: 10px;
 }
@@ -127,15 +124,36 @@ p {
   width: 100%;
   height: 26vh;
   background: #211f1f;
+  font-size: 0.9rem;
+  padding: 0.2em 0.4em;
+}
+
+.projects__github-text {
+  color: #ecdab9;
+  font-weight: 500;
+  display: block;
+  margin-top: -0.4em;
+}
+
+.projects .k {
+  position: absolute;
+  width: 100%;
+  height: 95%;
+  background: #ecdab9;
+  opacity: 0.8;
 }
 
 .projects .page-navigation-projects {
-  margin: 0 10em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: -0.4em auto 0em auto;
+  padding: 0;
 }
 
 .projects .page-navigation__arrow {
   color: #ecdab9;
-  margin: 0;
+  margin: 0 0.5em 0 0.5em;
   padding: 0;
 }
 
@@ -579,7 +597,7 @@ html.is-animating .transition-wipe {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     width: 30%;
