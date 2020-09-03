@@ -434,6 +434,81 @@ html.is-animating .transition-wipe {
   }
 }
 
+@media (max-height: 600px) {
+  .solar-system {
+    width: 220px;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5em auto;
+    // position: absolute;
+  }
+
+  .orbit {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fafbfc;
+    border-radius: 50%;
+  }
+
+  .earth-orbit {
+    width: 200px;
+    height: 200px;
+    -webkit-animation: spin 12s linear 0s infinite;
+  }
+
+  .venus-orbit {
+    width: 140px;
+    height: 140px;
+    -webkit-animation: spin 12s linear 0s infinite;
+  }
+
+  .mercury-orbit {
+    width: 80px;
+    height: 80px;
+    -webkit-animation: spin 12s linear 0s infinite;
+  }
+
+  .planet {
+    position: absolute;
+    top: -20px;
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    background-color: #ecdab9;
+  }
+
+  .sun {
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    background-color: #211f1f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $acc-clr;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    margin-top: 0em;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+
+  .planet {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 @media (min-height: 700px) {
   .hero__illustration {
     display: block;
