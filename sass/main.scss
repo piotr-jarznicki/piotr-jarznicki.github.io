@@ -79,7 +79,9 @@ body {
     background: $acc-clr;
   }
 }
-
+.main-nav-desktop__item {
+  display: none;
+}
 .main-nav {
   display: flex;
   justify-content: center;
@@ -219,26 +221,73 @@ html.is-animating .transition-wipe {
 // ** MEDIA QUERIES **
 
 @media (min-width: 1024px) {
-  .logo-menu {
+  .main-nav-desktop {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 1em 2em 0em 2em;
+    margin-top: 2em;
+    &__item {
+      display: flex;
+      margin: 0 5em 0 0;
+      padding: 0;
+      // border: 1px solid green;
+    }
+
+    &__list {
+      margin: 0 3em 0 0;
+      color: white;
+    }
+
+    &__link {
+      // margin: 0 3em 0 0;
+      font-size: 0.9rem;
+      color: white;
+    }
+
+    &__link:hover {
+      border-bottom: 2px solid $acc-clr;
+      padding-bottom: 1em;
+    }
+  }
+  .container-logo {
+    display: none;
+  }
+  .lines-container {
+    position: absolute;
+    // background-image: url("/assets/Lines.png");
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // background-size: 100% 100%;
+    width: 100vw;
+    height: 100vh;
+    z-index: -11;
+  }
+
+  .logo-menu {
+    // border: 1px solid red;
+
+    margin: 1em 2em 1em 9.8em;
 
     &__text {
-      font-weight: 500;
+      font-weight: 300;
       color: $acc-clr;
-      font-size: 0.9rem;
+      font-size: 1.1rem;
+      letter-spacing: 1px;
+      margin: 2em 0 0 0;
+      padding: 0;
+    }
+
+    &__hamburger-icon {
+      display: none;
     }
   }
 
   .hero {
-    border: 1px solid red;
+    background-image: url("/assets/dots-color.png");
+    background-position-x: 20%;
     display: flex;
     align-items: center;
     // justify-content: space-between;
     height: 40vh;
-    margin: 5em;
+    margin: 9em 5em 0 5em;
 
     &__text {
       margin-left: 5em;
@@ -246,20 +295,19 @@ html.is-animating .transition-wipe {
     }
 
     &__heading {
-      font-size: 3.5rem;
+      font-size: 5.5rem;
       font-weight: normal;
     }
 
     &__title {
-      font-size: 2rem;
+      font-size: 3rem;
     }
 
     &__minor-heading {
-      font-size: 1.5rem;
-      padding: 0 1.5em;
+      font-size: 3rem;
+      padding: 0;
       color: $acc-clr;
     }
-
     &__illustration {
       display: none;
       height: 70vh;
@@ -267,7 +315,7 @@ html.is-animating .transition-wipe {
     }
 
     &__subtitle {
-      font-size: 1rem;
+      font-size: 1.2rem;
     }
 
     &__button {
@@ -276,11 +324,17 @@ html.is-animating .transition-wipe {
       margin-top: 2em;
       font-weight: 600;
       background: $acc-clr;
+      transition: 0.3s;
+    }
+
+    &__button:hover {
+      background: #dfc38f;
+      cursor: pointer;
     }
   }
 
   .main-nav {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     position: relative;

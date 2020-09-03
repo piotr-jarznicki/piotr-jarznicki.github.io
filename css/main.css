@@ -310,6 +310,10 @@ body {
   background: #ecdab9;
 }
 
+.main-nav-desktop__item {
+  display: none;
+}
+
 .main-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -496,25 +500,57 @@ html.is-animating .transition-wipe {
 }
 
 @media (min-width: 1024px) {
-  .logo-menu {
+  .main-nav-desktop {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: 1em 2em 0em 2em;
+    margin-top: 2em;
+  }
+  .main-nav-desktop__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 5em 0 0;
+    padding: 0;
+  }
+  .main-nav-desktop__list {
+    margin: 0 3em 0 0;
+    color: white;
+  }
+  .main-nav-desktop__link {
+    font-size: 0.9rem;
+    color: white;
+  }
+  .main-nav-desktop__link:hover {
+    border-bottom: 2px solid #ecdab9;
+    padding-bottom: 1em;
+  }
+  .container-logo {
+    display: none;
+  }
+  .lines-container {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: -11;
+  }
+  .logo-menu {
+    margin: 1em 2em 1em 9.8em;
   }
   .logo-menu__text {
-    font-weight: 500;
+    font-weight: 300;
     color: #ecdab9;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    margin: 2em 0 0 0;
+    padding: 0;
+  }
+  .logo-menu__hamburger-icon {
+    display: none;
   }
   .hero {
-    border: 1px solid red;
+    background-image: url("/assets/dots-color.png");
+    background-position-x: 20%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -522,22 +558,22 @@ html.is-animating .transition-wipe {
         -ms-flex-align: center;
             align-items: center;
     height: 40vh;
-    margin: 5em;
+    margin: 9em 5em 0 5em;
   }
   .hero__text {
     margin-left: 5em;
     text-align: left;
   }
   .hero__heading {
-    font-size: 3.5rem;
+    font-size: 5.5rem;
     font-weight: normal;
   }
   .hero__title {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .hero__minor-heading {
-    font-size: 1.5rem;
-    padding: 0 1.5em;
+    font-size: 3rem;
+    padding: 0;
     color: #ecdab9;
   }
   .hero__illustration {
@@ -546,7 +582,7 @@ html.is-animating .transition-wipe {
     margin: 2em auto;
   }
   .hero__subtitle {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .hero__button {
     width: 10em;
@@ -554,11 +590,15 @@ html.is-animating .transition-wipe {
     margin-top: 2em;
     font-weight: 600;
     background: #ecdab9;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .hero__button:hover {
+    background: #dfc38f;
+    cursor: pointer;
   }
   .main-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: none;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
