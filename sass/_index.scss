@@ -1,0 +1,135 @@
+body {
+  background: $primary-clr;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  font-size: 18px;
+  height: 100vh;
+}
+
+.logo-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1em 2em 0em 2em;
+
+  &__text {
+    font-weight: 500;
+    color: $acc-clr;
+    font-size: 0.9rem;
+  }
+}
+
+.hero {
+  height: 100vh;
+  margin-top: 0.7em;
+  &__heading {
+    font-size: 3.5rem;
+    font-weight: normal;
+  }
+
+  &__title {
+    font-size: 2rem;
+  }
+
+  &__minor-heading {
+    font-size: 1.5rem;
+    padding: 0 1.5em;
+    color: $acc-clr;
+  }
+
+  &__illustration {
+    display: none;
+    height: 30vh;
+    margin: 2em auto;
+  }
+
+  &__subtitle {
+    font-size: 1rem;
+  }
+
+  &__button {
+    width: 10em;
+    height: 3.5em;
+    margin-top: 2em;
+    font-weight: 600;
+    background: $acc-clr;
+  }
+}
+
+.main-nav-desktop__item {
+  display: none;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100vw;
+  height: 2.5em;
+  left: 100%;
+  background: #211f1f;
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0 auto;
+    color: white;
+  }
+
+  &__item {
+    width: 10%;
+  }
+
+  &__image {
+    width: 100%;
+  }
+}
+.another-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 3rem;
+}
+.social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 60%;
+  background: $acc-clr;
+}
+
+.nav {
+  &__list {
+    display: flex;
+    align-items: center;
+    margin-left: 1.1em;
+  }
+
+  &__item {
+    margin-left: 1.1em;
+  }
+
+  &__image {
+    width: 1.4em;
+  }
+}
+
+.page-navigation {
+  display: flex;
+  background-color: $acc-clr;
+  margin-right: 0;
+  height: 100%;
+  width: 40%;
+  margin-top: 0;
+  &__arrow {
+    margin-left: 1em;
+    font-size: 2em;
+    font-weight: 600;
+  }
+}

@@ -88,6 +88,8 @@
 // * DESKTOP *
 
 @media (min-width: 1024px) {
+  // * INDEX *
+
   .hero__illustration {
     display: block;
   }
@@ -118,7 +120,8 @@
     }
 
     &__link {
-      font-size: 0.9rem;
+      font-size: 1rem;
+      font-weight: 500;
       color: white;
     }
 
@@ -136,11 +139,11 @@
     margin: 1em 2em 1em 9.8em;
 
     &__text {
-      font-weight: 300;
+      font-weight: 500;
       color: $acc-clr;
-      font-size: 1.1rem;
+      font-size: 1.2rem;
       letter-spacing: 1px;
-      margin: 2em 0 0 0;
+      margin: 2rem 0 0 0;
       padding: 0;
     }
 
@@ -152,7 +155,6 @@
   .hero {
     background-image: url("/assets/dots-color.png");
     background-position-x: 20%;
-    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     height: 40vh;
@@ -240,6 +242,247 @@
 
     &__arrow {
       margin: 0 0 0 0.4em;
+    }
+  }
+
+  // * ABOUT-ME *
+
+  .about-me {
+    display: flex;
+    align-items: center;
+    background-image: url("/assets/dots-color@2x.png");
+    // background-position: 60%;
+    background-repeat: none;
+    &__title {
+      color: $acc-clr;
+      font-weight: normal;
+      font-size: 3.5rem;
+    }
+
+    &__subtitle {
+      font-weight: 300;
+      padding: 0 1.2em;
+      font-size: 1.3rem;
+    }
+
+    &__illustration {
+      display: none;
+    }
+
+    &__illustration-desktop {
+      width: 90%;
+      margin-top: 3em;
+      display: block;
+    }
+  }
+
+  .text {
+    width: 50%;
+    margin-bottom: 5em;
+    padding: 0 5em;
+  }
+
+  .skills {
+    background-image: url("/assets/Dots-animation.png");
+    display: flex;
+    align-items: center;
+    &__title {
+      margin-top: 1em;
+      color: $acc-clr;
+      font-size: 3.5rem;
+    }
+
+    &__subtitle {
+      font-size: 1.3rem;
+      padding: 0 1.2em;
+      //   padding: 0 0.8em;
+    }
+
+    &__illustration {
+      margin-top: 1em;
+    }
+  }
+
+  .solar-system {
+    width: 40em;
+    height: 40em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5em auto;
+  }
+
+  .orbit {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fafbfc;
+    border-radius: 50%;
+  }
+
+  .earth-orbit {
+    width: 500px;
+    height: 500px;
+    -webkit-animation: spin 40s linear 0s infinite;
+  }
+
+  .venus-orbit {
+    width: 400px;
+    height: 400px;
+    -webkit-animation: spin 40s linear 0s infinite;
+  }
+
+  .mercury-orbit {
+    width: 300px;
+    height: 300px;
+    -webkit-animation: spin 40s linear 0s infinite;
+  }
+
+  .planet {
+    position: absolute;
+    top: -30px;
+    width: 4.5em;
+    height: 4.5em;
+    border-radius: 50%;
+    background-color: #ecdab9;
+  }
+
+  .sun {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $acc-clr;
+    font-size: 1.2rem;
+    width: 6em;
+    height: 6em;
+    border-radius: 50%;
+    background-color: #211f1f;
+  }
+
+  .solar-system-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 0em;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+
+  // * PROJECTS *
+  .projects {
+    &__container {
+      width: 30%;
+      padding: 10px 10px;
+      border-left: 1px solid #292828;
+      border-top: 1px solid #292828;
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+    }
+
+    &__image {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      border-bottom: 1px solid #292828;
+      padding-bottom: 10px;
+    }
+
+    &__description {
+      margin: 0.5em 0;
+      width: 100%;
+      background: #211f1f;
+      font-size: 0.9rem;
+      padding: 0.2em 0.4em;
+    }
+    &__github-text {
+      color: $acc-clr;
+      font-weight: 500;
+      display: block;
+      margin-top: -0.4em;
+    }
+    .k {
+      position: absolute;
+      width: 100%;
+      height: 95%;
+      background: $acc-clr;
+      opacity: 0.8;
+    }
+    .page-navigation-projects {
+      display: flex;
+      margin: -0.4em auto 0em auto;
+      padding: 0;
+    }
+
+    .page-navigation__arrow {
+      color: $acc-clr;
+      margin: 0 0.5em 0 0.5em;
+      padding: 0;
+    }
+  }
+
+  // * CONTACT ME *
+
+  .contact {
+    background-image: url("/assets/Dots-animation.png");
+    background-image: url("/assets/dots-color.png");
+    display: flex;
+    align-items: center;
+    &__form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 80vw;
+      margin: 0 auto;
+    }
+
+    &__title {
+      font-size: 3rem;
+      color: $acc-clr;
+    }
+    &__subtitle {
+      font-size: 1.3rem;
+      padding: 0 1em;
+    }
+  }
+
+  .form {
+    margin-top: 3em;
+    max-width: 30vw;
+    &__label {
+      color: white;
+      margin: 0.5em 0;
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+    &__input {
+      width: 100%;
+      color: white;
+      font-size: 1.1rem;
+      height: 3.5em;
+      background: #211f1f;
+      border: none;
+    }
+
+    &__submit {
+      font-size: 1.1rem;
+      padding: 1.1em 0;
+      transition: 0.3s;
+    }
+
+    &__submit:hover {
+      cursor: pointer;
+      background: #dfc38f;
+    }
+
+    &__textarea {
+      font-size: 1.1rem;
+      margin-bottom: 1em;
+      height: 10em;
+    }
+
+    span {
+      color: $acc-clr;
     }
   }
 }
