@@ -1,0 +1,245 @@
+// ** MEDIA QUERIES **
+
+@media (min-height: 600px) {
+  .contact {
+    margin-top: 2em;
+  }
+}
+
+// * SOLAR SYSTEM ANIMATION / SKILLS SECTION *
+
+@media (max-height: 600px) {
+  .solar-system {
+    width: 220px;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5em auto;
+  }
+
+  .orbit {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fafbfc;
+    border-radius: 50%;
+  }
+
+  .earth-orbit {
+    width: 200px;
+    height: 200px;
+  }
+
+  .venus-orbit {
+    width: 140px;
+    height: 140px;
+  }
+
+  .mercury-orbit {
+    width: 80px;
+    height: 80px;
+  }
+
+  .planet {
+    position: absolute;
+    top: -20px;
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    background-color: #ecdab9;
+  }
+
+  .sun {
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    background-color: #211f1f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $acc-clr;
+  }
+
+  .solar-system-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 0em;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+
+  .planet {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-height: 700px) {
+  .hero__illustration {
+    display: block;
+  }
+}
+
+// * DESKTOP *
+
+@media (min-width: 1024px) {
+  .hero__illustration {
+    display: block;
+  }
+  .another-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 3em;
+  }
+
+  .main-nav-desktop {
+    display: flex;
+    margin-top: 2em;
+
+    &__item {
+      display: flex;
+      margin: 0 5em 0 0;
+      padding: 0;
+    }
+
+    &__list {
+      margin: 0 3em 0 0;
+      color: white;
+    }
+
+    &__link {
+      font-size: 0.9rem;
+      color: white;
+    }
+
+    &__link:hover {
+      border-bottom: 2px solid $acc-clr;
+      padding-bottom: 1em;
+    }
+  }
+
+  .container-logo {
+    display: none;
+  }
+
+  .logo-menu {
+    margin: 1em 2em 1em 9.8em;
+
+    &__text {
+      font-weight: 300;
+      color: $acc-clr;
+      font-size: 1.1rem;
+      letter-spacing: 1px;
+      margin: 2em 0 0 0;
+      padding: 0;
+    }
+
+    &__hamburger-icon {
+      display: none;
+    }
+  }
+
+  .hero {
+    background-image: url("/assets/dots-color.png");
+    background-position-x: 20%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    height: 40vh;
+    margin: 9em 5em 0 5em;
+
+    &__text {
+      margin-left: 5em;
+      text-align: left;
+    }
+
+    &__heading {
+      font-size: 5.5rem;
+      font-weight: normal;
+    }
+
+    &__title {
+      font-size: 3rem;
+    }
+
+    &__minor-heading {
+      font-size: 3rem;
+      padding: 0;
+      color: $acc-clr;
+    }
+    &__illustration {
+      display: block;
+      height: 70vh;
+      margin: 2em auto;
+    }
+
+    &__subtitle {
+      font-size: 1.2rem;
+    }
+
+    &__button {
+      width: 10em;
+      height: 3.5em;
+      margin-top: 2em;
+      font-weight: 600;
+      background: $acc-clr;
+      transition: 0.3s;
+    }
+
+    &__button:hover {
+      background: #dfc38f;
+      cursor: pointer;
+    }
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  .social-media {
+    width: 25%;
+    background: $acc-clr;
+  }
+
+  .nav {
+    &__list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+    }
+
+    &__item {
+      margin-left: 1.1em;
+    }
+
+    &__image {
+      width: 1.4em;
+      fill: black;
+    }
+  }
+
+  .page-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3em;
+    width: 8%;
+    margin: 0;
+    background: $acc-clr;
+
+    &__arrow {
+      margin: 0 0 0 0.4em;
+    }
+  }
+}
