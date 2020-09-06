@@ -1,4 +1,5 @@
 # piotr-jarznicki.github.io
 
-Future portfolio
-Test
+Simple Junior Front-End Portfolio created with use of the html/css/scss/js/swup.js
+
+It still needs some work on responsivness and animations.
