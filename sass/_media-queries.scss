@@ -251,7 +251,6 @@
     display: flex;
     align-items: center;
     background-image: url("/assets/dots-color@2x.png");
-    // background-position: 60%;
     background-repeat: none;
     &__title {
       color: $acc-clr;
@@ -260,7 +259,7 @@
     }
 
     &__subtitle {
-      font-weight: 300;
+      font-weight: 400;
       padding: 0 1.2em;
       font-size: 1.3rem;
     }
@@ -401,7 +400,7 @@
       display: block;
       margin-top: -0.4em;
     }
-    .k {
+    .image-overlay {
       position: absolute;
       width: 100%;
       height: 95%;
