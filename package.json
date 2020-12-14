@@ -1,0 +1,25 @@
+{
+  "name": "piotr-jarznicki.github.io",
+  "version": "1.0.0",
+  "description": "Junior Front-End Developer Portfolio fully created & designed by me in Adobe XD.",
+  "main": "../js/app.js",
+  "dependencies": {
+    "@glidejs/glide": "^3.4.1",
+    "swiper": "^6.4.1",
+    "swup": "^2.0.13"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/piotr-jarznicki/piotr-jarznicki.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/piotr-jarznicki/piotr-jarznicki.github.io/issues"
+  },
+  "homepage": "https://github.com/piotr-jarznicki/piotr-jarznicki.github.io#readme"
+}
