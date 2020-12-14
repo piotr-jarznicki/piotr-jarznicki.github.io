@@ -2,6 +2,8 @@
 
 Junior Front-End Developer Portfolio fully created & designed by me in Adobe XD. 
 
+![](design/portfolio.png)
+
 ## :hammer: Technology used: 
 
 :nut_and_bolt: HTML
