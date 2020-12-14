@@ -1,20 +1,16 @@
 .about-me {
   &__title {
-    color: $acc-clr;
     font-weight: normal;
+    color: $acc-clr;
   }
 
   &__subtitle {
-    font-weight: 300;
     padding: 0 1.1em;
+    font-weight: 300;
     font-size: 1rem;
   }
 
   &__illustration {
-    position: absolute;
-    top: 38%;
-    left: 55%;
-    transform: translateX(-50%);
     width: 70%;
     margin: 0 auto;
   }

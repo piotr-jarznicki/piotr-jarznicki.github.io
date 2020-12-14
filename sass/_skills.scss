@@ -4,11 +4,16 @@
   }
 
   &__subtitle {
-    font-size: 0.9rem;
     padding: 0 0.8em;
+    font-size: 0.9rem;
   }
 
   &__illustration {
     margin-top: 1em;
+  }
+
+  &__image {
+    width: 80vw;
+    margin: 3em auto 0 auto;
   }
 }

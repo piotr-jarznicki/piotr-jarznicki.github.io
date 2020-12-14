@@ -1,8 +1,16 @@
 body {
-  background: $primary-clr;
-  font-family: "Raleway", sans-serif;
-  text-align: center;
+  height: 100vh;
   font-size: 18px;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  background: $primary-clr;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+header {
   height: 100vh;
 }
 
@@ -13,9 +21,9 @@ body {
   margin: 1em 2em 0em 2em;
 
   &__text {
+    font-size: 0.9rem;
     font-weight: 500;
     color: $acc-clr;
-    font-size: 0.9rem;
   }
 }
 
@@ -32,8 +40,8 @@ body {
   }
 
   &__minor-heading {
-    font-size: 1.5rem;
     padding: 0 1.5em;
+    font-size: 1.5rem;
     color: $acc-clr;
   }
 
@@ -51,7 +59,8 @@ body {
     width: 10em;
     height: 3.5em;
     margin-top: 2em;
-    font-weight: 600;
+    font-weight: 700;
+    font-family: "Raleway", sans-serif;
     background: $acc-clr;
   }
 }
@@ -82,7 +91,7 @@ body {
   }
 
   &__image {
-    width: 100%;
+    width: 90%;
   }
 }
 .another-container {
@@ -100,7 +109,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100%;
-  width: 60%;
+  width: 100%;
   background: $acc-clr;
 }
 
@@ -108,27 +117,23 @@ body {
   &__list {
     display: flex;
     align-items: center;
-    margin-left: 1.1em;
+    justify-content: center;
+    gap: 30px;
   }
-
-  &__item {
-    margin-left: 1.1em;
-  }
-
   &__image {
-    width: 1.4em;
+    width: 1.2em;
   }
 }
 
 .page-navigation {
   display: flex;
   background-color: $acc-clr;
-  margin-right: 0;
+  margin: 0;
+  justify-content: center;
   height: 100%;
   width: 40%;
-  margin-top: 0;
   &__arrow {
-    margin-left: 1em;
+    margin: 0 0.3em;
     font-size: 2em;
     font-weight: 600;
   }

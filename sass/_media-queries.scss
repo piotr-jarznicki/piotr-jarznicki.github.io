@@ -6,79 +6,6 @@
   }
 }
 
-// * SOLAR SYSTEM ANIMATION / SKILLS SECTION *
-
-@media (max-height: 600px) {
-  .solar-system {
-    width: 220px;
-    height: 220px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0.5em auto;
-  }
-
-  .orbit {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #fafbfc;
-    border-radius: 50%;
-  }
-
-  .earth-orbit {
-    width: 200px;
-    height: 200px;
-  }
-
-  .venus-orbit {
-    width: 140px;
-    height: 140px;
-  }
-
-  .mercury-orbit {
-    width: 80px;
-    height: 80px;
-  }
-
-  .planet {
-    position: absolute;
-    top: -20px;
-    width: 4em;
-    height: 4em;
-    border-radius: 50%;
-    background-color: #ecdab9;
-  }
-
-  .sun {
-    width: 4em;
-    height: 4em;
-    border-radius: 50%;
-    background-color: #211f1f;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: $acc-clr;
-  }
-
-  .solar-system-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 0em;
-    font-weight: 600;
-    font-size: 0.9rem;
-  }
-
-  .planet {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
 @media (min-height: 700px) {
   .hero__illustration {
     display: block;
@@ -280,7 +207,7 @@
     margin-bottom: 5em;
     padding: 0 5em;
   }
-
+  // SKILLS SECTION
   .skills {
     background-image: url("/assets/Dots-animation.png");
     display: flex;
@@ -294,77 +221,45 @@
     &__subtitle {
       font-size: 1.3rem;
       padding: 0 1.2em;
-      //   padding: 0 0.8em;
     }
 
     &__illustration {
       margin-top: 1em;
     }
+
+    &__image {
+      width: 40vw;
+      margin: 3em auto 0 auto;
+    }
   }
 
-  .solar-system {
-    width: 40em;
-    height: 40em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0.5em auto;
-  }
+  .project {
+    width: 40%;
+    &__description {
+      width: 100%;
+      min-height: 25vh;
+      background: #211f1f;
+      font-size: 0.9rem;
+      padding: 0.2em 0.6em;
+    }
+    &__image {
+      display: block;
+      width: 100%;
+    }
 
-  .orbit {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #fafbfc;
-    border-radius: 50%;
-  }
+    &__tech {
+      font-weight: 400;
+      margin-bottom: 0.2em;
+      color: $text-clr;
+    }
 
-  .earth-orbit {
-    width: 500px;
-    height: 500px;
-    -webkit-animation: spin 40s linear 0s infinite;
-  }
+    &__heading {
+      color: $acc-clr;
 
-  .venus-orbit {
-    width: 400px;
-    height: 400px;
-    -webkit-animation: spin 40s linear 0s infinite;
-  }
-
-  .mercury-orbit {
-    width: 300px;
-    height: 300px;
-    -webkit-animation: spin 40s linear 0s infinite;
-  }
-
-  .planet {
-    position: absolute;
-    top: -30px;
-    width: 4.5em;
-    height: 4.5em;
-    border-radius: 50%;
-    background-color: #ecdab9;
-  }
-
-  .sun {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: $acc-clr;
-    font-size: 1.2rem;
-    width: 6em;
-    height: 6em;
-    border-radius: 50%;
-    background-color: #211f1f;
-  }
-
-  .solar-system-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 0em;
-    font-weight: 600;
-    font-size: 0.9rem;
+      font-size: 1.4rem;
+      font-weight: 700;
+      padding: 0.5em 0;
+    }
   }
 
   // * PROJECTS *
@@ -372,51 +267,13 @@
     &__container {
       width: 30%;
       padding: 10px 10px;
-      border-left: 1px solid #292828;
-      border-top: 1px solid #292828;
       display: flex;
       flex-direction: column;
       margin: 0 auto;
     }
 
-    &__image {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      border-bottom: 1px solid #292828;
-      padding-bottom: 10px;
-    }
-
     &__description {
-      margin: 0.5em 0;
-      width: 100%;
-      background: #211f1f;
       font-size: 0.9rem;
-      padding: 0.2em 0.4em;
-    }
-    &__github-text {
-      color: $acc-clr;
-      font-weight: 500;
-      display: block;
-      margin-top: -0.4em;
-    }
-    .image-overlay {
-      position: absolute;
-      width: 100%;
-      height: 95%;
-      background: $acc-clr;
-      opacity: 0.8;
-    }
-    .page-navigation-projects {
-      display: flex;
-      margin: -0.4em auto 0em auto;
-      padding: 0;
-    }
-
-    .page-navigation__arrow {
-      color: $acc-clr;
-      margin: 0 0.5em 0 0.5em;
-      padding: 0;
     }
   }
 
