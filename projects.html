@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="/css/main.css" />
   </head>
+
   <body>
     <header class="header">
       <section class="logo-menu">
@@ -55,67 +56,83 @@
         </nav>
       </section>
       <section class="projects header__projects transition-fade" id="swup">
-        <div class="projects__container">
-          <div class="projects__image">
-            <div class="image-overlay"></div>
-            <img src="/assets/project-image.jpeg" alt="" />
-          </div>
-          <div class="projects__description">
-            <p>
-              Free space for my awesome javascript game project description!
+        <div class="project">
+          <img class="project__image" src="/assets/project1.png" alt="" />
+          <div class="project__description">
+            <h3 class="project__heading">Zaadoptuj programistę</h3>
+            <p class="project__text">
+              Project is being created in a team of three developers and it's
+              still under development. Web application where users can create
+              their own projects, specify team members they are looking for or
+              search for existing project created by someone else and apply for
+              that project.
             </p>
-            <a href="" class="projects__github-text">See Gtibhub -></a>
+            <h3 class="project__heading">Technology:</h3>
+            <p >
+
+              <ul class="project__tech">
+                <li class="project__tech" > React(styled components, hooks, react context, react router, react select, react responsive )</li>
+                <li class="project__tech">JavaScript</li>
+                <li class="project__tech"> Firebase (Firestore, Authentication)</li>
+                <li class="project__tech"> HTML</li>
+
+              </ul>
+             
+            </p>
+            <a
+              href="https://github.com/infoshareacademy/jfddr1-maklowiczeprogramowania-app"
+              class="project__github-link"
+              >Github</a
+            >
+            <a
+              href="https://infoshareacademy.github.io/jfddr1-maklowiczeprogramowania-app/"
+              class="project__github-link"
+              >Live preview</a
+            >
           </div>
-          <section class="page-navigation-projects header__page-navigation">
-            <div class="page-navigation__arrow">&#60;</div>
-            <div class="page-navigation__arrow">&#62;</div>
-          </section>
         </div>
+
       </section>
       <section class="social-media header__social-media">
         <nav class="nav social-media__nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="" class="nav__link"
-                ><img
-                  src="assets/facebook.svg"
-                  class="nav__image"
-                  alt="facebook black icon"
-              /></a>
-            </li>
-            <li class="nav__item">
-              <a href="" class="nav__link"
+              <a href="https://github.com/piotr-jarznicki" class="nav__link"
                 ><img
                   src="assets/github-logo.svg"
                   class="nav__image"
                   alt="github black icon"
               /></a>
             </li>
+
             <li class="nav__item">
-              <a href="" class="nav__link"
-                ><img
-                  src="assets/instagram.svg"
-                  class="nav__image"
-                  alt="instagram black icon"
-              /></a>
-            </li>
-            <li class="nav__item">
-              <a href="" class="nav__link"
+              <a
+                href="https://www.linkedin.com/in/piotr-jarznicki/"
+                class="nav__link"
                 ><img
                   src="assets/linkedin.svg"
                   class="nav__image"
                   alt="linkedin black icon"
               /></a>
             </li>
+            <li class="nav__item">
+              <a
+                href="https://www.facebook.com/piotr.jarznicki"
+                class="nav__link"
+                ><img
+                  src="assets/facebook.svg"
+                  class="nav__image"
+                  alt="facebook black icon"
+              /></a>
+            </li>
           </ul>
         </nav>
-        <section class="page-navigation header__page-navigation">
-          <div class="page-navigation__arrow">&#60;</div>
-          <div class="page-navigation__arrow">&#62;</div>
-        </section>
       </section>
     </header>
-
+    <script src="/node_modules/swup/dist/swup.js"></script>
     <script src="js/app.js"></script>
+    <script>
+      const swup = new Swup();
+    </script>
   </body>
 </html>
