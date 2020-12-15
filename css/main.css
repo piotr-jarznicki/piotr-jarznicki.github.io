@@ -204,6 +204,7 @@ html.is-animating .transition-wipe {
 
 .project {
   width: 90%;
+  margin-bottom: 5em;
 }
 
 .project__description {
@@ -298,7 +299,7 @@ html.is-animating .transition-wipe {
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   font-size: 18px;
   text-align: center;
   font-family: "Raleway", sans-serif;
@@ -310,7 +311,12 @@ html {
 }
 
 header {
-  height: 100vh;
+  min-height: 100vh;
+}
+
+header__navigation {
+  margin-bottom: 10em;
+  border: 1px solid green;
 }
 
 .logo-menu {
@@ -378,6 +384,7 @@ header {
   height: 2.5em;
   left: 100%;
   background: #211f1f;
+  margin-bottom: 2em;
 }
 
 .main-nav__list {
@@ -413,6 +420,7 @@ header {
   justify-content: center;
   height: 100%;
   width: 100%;
+  margin: 2em 0;
   background: #ecdab9;
 }
 
@@ -634,7 +642,7 @@ header {
     margin: 3em auto 0 auto;
   }
   .project {
-    width: 40%;
+    width: 30em;
   }
   .project__description {
     width: 100%;
@@ -654,6 +662,7 @@ header {
   }
   .project__heading {
     color: #ecdab9;
+    margin: 0.2em 0;
     font-size: 1.4rem;
     font-weight: 700;
     padding: 0.5em 0;

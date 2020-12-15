@@ -1,5 +1,5 @@
 body {
-  height: 100vh;
+  min-height: 100vh;
   font-size: 18px;
   text-align: center;
   font-family: "Raleway", sans-serif;
@@ -11,7 +11,12 @@ html {
 }
 
 header {
-  height: 100vh;
+  min-height: 100vh;
+
+  &__navigation {
+    margin-bottom: 10em;
+    border: 1px solid green;
+  }
 }
 
 .logo-menu {
@@ -78,6 +83,7 @@ header {
   height: 2.5em;
   left: 100%;
   background: #211f1f;
+  margin-bottom: 2em;
   &__list {
     display: flex;
     justify-content: space-around;
@@ -110,6 +116,7 @@ header {
   justify-content: center;
   height: 100%;
   width: 100%;
+  margin: 2em 0;
   background: $acc-clr;
 }
 
